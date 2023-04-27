@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Images Gallery</title>
+    <style>
+      /* 반응형 스타일링 */
+      .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .image-gallery img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      @media screen and (min-width: 768px) {
+        .image-gallery {
+          justify-content: space-between;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-gallery">
+      <img src="images/img1.jpg" alt="Image 1">
+      <img src="images/img2.jpg" alt="Image 2">
+      <img src="images/img3.jpg" alt="Image 3">
+      <img src="images/img4.jpg" alt="Image 4">
+      <img src="images/img5.jpg" alt="Image 5">
+    </div>
+  </body>
+</html>
